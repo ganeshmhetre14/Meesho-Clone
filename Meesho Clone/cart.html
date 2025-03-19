@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Meesho Clone</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <img src="images/logo/meeshologo.jpg" alt="Meesho Logo" class="logo">
+            <div class="search-bar">
+                <input type="text" placeholder="Try Saree, Kurti or Search by Product Code">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="nav-links">
+                <a href="https://app.meesho.com/2yoV?pid=pow_website&c=pow&af_dp=supply%3A%2F%2Fopen&af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.meesho.supply" target="_blank" class="nav-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Download App</span>
+                </a>
+                <a href="https://supplier.meesho.com/" class="nav-item">
+                    <i class="fas fa-store"></i>
+                    <span>Become a Supplier</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="cart-container">
+            <!-- Cart Items Section -->
+            <div class="cart-items">
+                <h1 class="cart-title">Cart (3 items)</h1>
+                
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <img src="https://images.meesho.com/images/products/369383707/xeh9a_400.webp" alt="Product 1" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Classy Stylish Women Kurta</h3>
+                        <p class="item-size">Size: M</p>
+                        <p class="item-price">₹499 <span class="item-discount">50% off</span></p>
+                        <p class="item-delivery">Free Delivery</p>
+                    </div>
+                    <div class="item-actions">
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-btn">REMOVE</button>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <img src="https://images.meesho.com/images/products/133574415/toycd_400.webp" alt="Product 2" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Fashionable Men's Cotton Shirt</h3>
+                        <p class="item-size">Size: L</p>
+                        <p class="item-price">₹699 <span class="item-discount">35% off</span></p>
+                        <p class="item-delivery">Free Delivery</p>
+                    </div>
+                    <div class="item-actions">
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-btn">REMOVE</button>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <img src="https://images.meesho.com/images/products/341944236/3g4nv_400.webp" alt="Product 3" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Elegant Women's Handbag</h3>
+                        <p class="item-size">Color: Brown</p>
+                        <p class="item-price">₹899 <span class="item-discount">40% off</span></p>
+                        <p class="item-delivery">Free Delivery</p>
+                    </div>
+                    <div class="item-actions">
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-btn">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Summary Section -->
+            <div class="order-summary">
+                <h2 class="summary-title">Price Details</h2>
+                <div class="summary-item">
+                    <span>Total Product Price</span>
+                    <span>₹2,097</span>
+                </div>
+                <div class="summary-item">
+                    <span>Discount</span>
+                    <span>-₹898</span>
+                </div>
+                <div class="summary-item">
+                    <span>Delivery Charge</span>
+                    <span>FREE</span>
+                </div>
+                <div class="summary-total">
+                    <span>Order Total</span>
+                    <span>₹1,199</span>
+                </div>
+                <button class="checkout-btn">CONTINUE</button>
+                <p class="savings">You are saving ₹898 on this order</p>
+            </div>
+            
+            <!-- Empty Cart Section (hidden by default) -->
+            <div class="empty-cart">
+                <img src="images/empty-cart.png" alt="Empty Cart">
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added any items to your cart yet.</p>
+                <button class="shop-now-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Shop Non-Stop</h3>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                    <li><a href="#">Beauty & Health</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Policies</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Become a Supplier</h3>
+                <ul>
+                    <li><a href="#">Register as a Supplier</a></li>
+                    <li><a href="#">Supplier Login</a></li>
+                    <li><a href="#">Supplier Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Meesho Clone. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // You can add JavaScript functionality here
+        document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('.quantity-input');
+                const currentValue = parseInt(input.value);
+                
+                if (this.textContent === '+') {
+                    input.value = currentValue + 1;
+                } else if (this.textContent === '-' && currentValue > 1) {
+                    input.value = currentValue - 1;
+                }
+            });
+        });
+        
+        document.querySelectorAll('.remove-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartItem = this.closest('.cart-item');
+                cartItem.style.display = 'none';
+                
+                // Check if all items are removed
+                const visibleItems = document.querySelectorAll('.cart-item[style="display: none;"]').length;
+                const totalItems = document.querySelectorAll('.cart-item').length;
+                
+                if (visibleItems === totalItems) {
+                    document.querySelector('.cart-items').style.display = 'none';
+                    document.querySelector('.order-summary').style.display = 'none';
+                    document.querySelector('.empty-cart').style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
