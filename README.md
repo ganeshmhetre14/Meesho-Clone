@@ -25,7 +25,7 @@ This project is a clone of the popular e-commerce platform Meesho, built with HT
 ## Installation and Setup
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/meesho-clone.git
+   git clone https://github.com/ganeshmhetre14/meesho-clone.git
    ```
 2. Navigate to the project directory:
    ```
